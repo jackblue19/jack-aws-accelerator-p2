@@ -1,0 +1,29 @@
+# Terraform local cache
+.terraform/
+
+# Terraform state - không commit
+*.tfstate
+*.tfstate.*
+
+# Terraform variables thật - có thể chứa secret
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Plan files
+*.tfplan
+plan.out
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local CLI config
+.terraformrc
+terraform.rc

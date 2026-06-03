@@ -1,0 +1,32 @@
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+plan.out
+
+# Terraform local config/crash
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+
+@"
+
+# Terraform
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/terraform.tfvars
+**/*.auto.tfvars
+**/*.auto.tfvars.json
+**/*.tfplan
+**/plan.out
+"@ | Add-Content .gitignore
